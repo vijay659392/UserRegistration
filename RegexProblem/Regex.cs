@@ -51,6 +51,7 @@ namespace RegexProblem
         }
         public void ValidatePhoneNumber(string phoneNumber)
         {
+            //"91 7729937460"
             string phoneNum = @"[0-9]{1,2}\s[0-9]{10}";
             if (Regex.IsMatch(phoneNumber, phoneNum))
             {
@@ -61,7 +62,18 @@ namespace RegexProblem
                 Console.WriteLine("Phone Number is not matching with Regex");
             }
         }
-
+        public void ValidatePassword(string pswd)
+        {
+            string password = @"[A-Z a-z 0-9]{8,}";
+            if (Regex.IsMatch(pswd, password))
+            {
+                Console.WriteLine("Password is matching with Regex");
+            }
+            else
+            {
+                Console.WriteLine("Password not is matching with Regex");
+            }
+        }
 
     }
     
