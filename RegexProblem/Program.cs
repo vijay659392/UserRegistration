@@ -18,6 +18,7 @@ namespace RegexProblem
             regex.ValidatePassword("Vijay0987");
             regex.ValidateString("Vijay");
             regex.ValidateNumericPassword("Vijay8");
+            regex.ValidateSpecialCharacter("Vijay@8");
             Console.ReadLine();
         }
     }
