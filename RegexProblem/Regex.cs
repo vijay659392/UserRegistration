@@ -62,6 +62,18 @@ namespace RegexProblem
                 Console.WriteLine("Phone Number is not matching with Regex");
             }
         }
+        public void ValidateString(string str)
+        {
+            string name = "[A-Z]{1}[a-z]";
+            if (Regex.IsMatch((string)str, name))
+            {
+                Console.WriteLine("It is matching with Regex");
+            }
+            else
+            {
+                Console.WriteLine("It not is matching with Regex");
+            }
+        }
         public void ValidatePassword(string pswd)
         {
             string password = @"[A-Z a-z 0-9]{8,}";
