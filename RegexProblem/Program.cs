@@ -12,6 +12,7 @@ namespace RegexProblem
         {
             RegexMethod regex = new RegexMethod();
             regex.ValidateFirstName("Vijay");
+            regex.ValidateLastName("Durkikar");
             Console.ReadLine();
         }
     }

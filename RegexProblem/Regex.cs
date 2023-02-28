@@ -23,8 +23,21 @@ namespace RegexProblem
                 Console.WriteLine("First name not macthing with Regex");
             }
          }
+        public void ValidateLastName(string name)
+        {
+            string lastName = "^[A-Z][a-z]{3,}?";
+            if (Regex.IsMatch(name, lastName))
+            {
+                Console.WriteLine("Last name macthing with Regex");
+            }
+            else
+            {
+                Console.WriteLine("Last name not macthing with Regex");
+            }
+        }
 
-  
+
+
     }
     
 }
