@@ -10,17 +10,19 @@ namespace RegexProblem
     public class RegexMethod
     {
       
-         public void ValidateFirstName(string name)
+         public string ValidateFirstName(string name)
          {
             //Vijay
              string firstName = "^[A-Z][a-z]{3,}?";
              if(Regex.IsMatch(name,firstName))
              {
                 Console.WriteLine("First name matching with Regex");
+                return "First name matching with Regex";
              }
             else
             {
                 Console.WriteLine("First name not matching with Regex");
+                return "First name not matching with Regex";
             }
          }
         public void ValidateLastName(string name)
